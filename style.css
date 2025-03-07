@@ -1,32 +1,122 @@
+/* General Styling */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: #f4f4f4;
+    color: #333;
 }
 
-header {
-    background-color: #222;
+/* Title Bar */
+.title-bar {
+    background: #003366;
     color: white;
-    padding: 20px;
+    text-align: center;
+    padding: 20px 0;
+}
+.title-bar h1 {
+    margin: 0;
+    font-size: 32px;
+}
+.title-bar p {
+    margin: 5px 0 0;
+    font-size: 18px;
 }
 
-nav a {
-    color: white;
+/* Navigation Bar */
+nav {
+    background: #004080;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    display: inline;
     margin: 0 15px;
-    text-decoration: none;
 }
-
-.about img {
-    width: 150px;
-    border-radius: 50%;
-    margin-top: 20px;
-}
-
-footer {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #222;
+nav ul li a {
     color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px;
+    display: inline-block;
+}
+nav ul li a:hover {
+    background: #002d5b;
+    border-radius: 5px;
+}
+
+/* Sections */
+section {
+    padding: 50px;
+    text-align: center;
+    background: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* About Me */
+.about img {
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.about-text {
+    max-width: 700px;
+    margin: auto;
+}
+.btn {
+    display: inline-block;
+    background: #004080;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn:hover {
+    background: #002d5b;
+}
+
+/* Education */
+.education-details {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.edu-card {
+    background: #e6f0ff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Certifications */
+.certifications ul {
+    list-style: none;
+    padding: 0;
+}
+.certifications ul li {
+    background: #e6f0ff;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
 }
