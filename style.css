@@ -1,113 +1,34 @@
-/* General Styling */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f4f4f4;
-    color: #333;
-}
-
-/* Title Bar */
-.title-bar {
-    background: #003366;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-.title-bar h1 {
-    margin: 0;
-    font-size: 32px;
-}
-.title-bar p {
-    margin: 5px 0 0;
-    font-size: 18px;
-}
-
-/* Navigation Bar */
-nav {
-    background: #004080;
-    text-align: center;
-    padding: 10px 0;
-}
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px 15px;
-    display: inline-block;
-}
-nav ul li a:hover {
-    background: #002d5b;
-    border-radius: 5px;
-}
-
-/* Sections */
-section {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    border: 2px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Section Headings */
-section h2 {
-    text-align: left;
-    font-size: 24px;
-    color: #004080;
-    border-bottom: 2px solid #004080;
-    padding-bottom: 5px;
-}
-
-/* Section Content */
+/* About Me Section */
 .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     text-align: justify;
+    gap: 20px;
 }
 
-/* About Me */
-.about img {
-    width: 150px;
-    height: 150px;
+.content img {
+    width: 120px;  /* Reduced size */
+    height: 120px;
     border-radius: 50%;
-    display: block;
-    margin-bottom: 15px;
+    flex-shrink: 0;  /* Ensures it doesn't shrink */
 }
+
+.content p {
+    flex-grow: 1;
+}
+
+/* Button Styling */
 .btn {
     display: inline-block;
     background: #004080;
     color: white;
-    padding: 10px 15px;
+    padding: 8px 12px;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 10px;
+    font-size: 14px;
 }
+
 .btn:hover {
     background: #002d5b;
-}
-
-/* Education & Certifications */
-.edu-card {
-    border-left: 4px solid #004080;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-/* Footer */
-footer {
-    background: #003366;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
 }
