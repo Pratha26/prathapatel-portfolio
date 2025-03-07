@@ -27,6 +27,7 @@ body {
 nav {
     background: #004080;
     text-align: center;
+    padding: 10px 0;
 }
 nav ul {
     list-style: none;
@@ -41,7 +42,7 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
-    padding: 15px;
+    padding: 10px 15px;
     display: inline-block;
 }
 nav ul li a:hover {
@@ -51,65 +52,55 @@ nav ul li a:hover {
 
 /* Sections */
 section {
-    padding: 50px;
-    text-align: center;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
     background: white;
-    margin: 20px;
     border-radius: 10px;
+    border: 2px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.container {
-    max-width: 900px;
-    margin: auto;
+
+/* Section Headings */
+section h2 {
+    text-align: left;
+    font-size: 24px;
+    color: #004080;
+    border-bottom: 2px solid #004080;
+    padding-bottom: 5px;
+}
+
+/* Section Content */
+.content {
+    text-align: justify;
 }
 
 /* About Me */
 .about img {
-    width: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    margin-bottom: 20px;
-}
-.about-text {
-    max-width: 700px;
-    margin: auto;
+    display: block;
+    margin-bottom: 15px;
 }
 .btn {
     display: inline-block;
     background: #004080;
     color: white;
-    padding: 10px 20px;
-    margin-top: 20px;
+    padding: 10px 15px;
     text-decoration: none;
     border-radius: 5px;
+    margin-top: 10px;
 }
 .btn:hover {
     background: #002d5b;
 }
 
-/* Education */
-.education-details {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
+/* Education & Certifications */
 .edu-card {
-    background: #e6f0ff;
-    padding: 20px;
-    border-radius: 10px;
-    width: 40%;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Certifications */
-.certifications ul {
-    list-style: none;
-    padding: 0;
-}
-.certifications ul li {
-    background: #e6f0ff;
+    border-left: 4px solid #004080;
     padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 /* Footer */
@@ -117,6 +108,6 @@ footer {
     background: #003366;
     color: white;
     text-align: center;
-    padding: 20px;
-    margin-top: 30px;
+    padding: 10px 0;
+    margin-top: 20px;
 }
