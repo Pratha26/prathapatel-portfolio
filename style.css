@@ -8,8 +8,7 @@
 }
 
 .content img {
-    width: 120px;  /* Reduced size */
-    height: 120px;
+    width: 150px;  /* Reduced size */
     border-radius: 50%;
     flex-shrink: 0;  /* Ensures it doesn't shrink */
 }
